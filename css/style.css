@@ -1872,7 +1872,7 @@ input[type="range"]::-moz-range-progress {
 
 .modal {
 	position: fixed;
-
+	
 	display: none;
 }
 
@@ -1930,8 +1930,10 @@ input[type="range"]::-moz-range-progress {
 .request-form input[type="email"],
 .sign-up-form input[type="text"],
 .sign-up-form input[type="password"],
+.sign-up-form input[type="email"],
 .sign-in-form input[type="text"],
-.sign-in-form input[type="password"] {
+.sign-in-form input[type="password"]
+ {
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 	width: 220px;
@@ -1939,6 +1941,9 @@ input[type="range"]::-moz-range-progress {
 
 	border: 2px solid #dee3e4;
 	border-radius: 3px;
+}
+.sign-up-form input[type="email"]{
+	width: 460px;
 }
 
 .request-form input,

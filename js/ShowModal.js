@@ -3,61 +3,64 @@
 //modal[2]= Реєстраія
 //modal[3]= Вхід
 var modal = document.getElementsByClassName("modal");
+
 var map = document.getElementById("map");
+
 var buttonClose = document.getElementsByClassName("modal-close");
+
 var buttonModal = document.getElementById("OpenModal");
 var buttonCredit = document.getElementById("OpenCredit");
-var ModalSignUp=document.getElementsByClassName("modal-sign-up");
+
+var ModalSignUp = document.getElementsByClassName("modal-sign-up");
 var ModalLogIn = document.getElementsByClassName("modal-sign-in");
+
 var SignUp = document.getElementsByClassName("sign-up");
 var LogIn = document.getElementsByClassName("sign-in");
 
 
-buttonModal.onclick =
-    function () {
-        modal[0].style.display = "block";
-        modal[1].style.display = "none";
-        modal[2].style.display = "none";
-        modal[3].style.display = "none";
+if (buttonModal !==null){
+buttonModal.onclick = function () {
+    NotToOpen();
+    modal[modal.length - 4].style.display = 'block';
     }
+}
+if (buttonCredit !== null) {
 buttonCredit.onclick = function () {
-    modal[0].style.display = "block";
-    modal[1].style.display = "none";
-    modal[2].style.display = "none";
-    modal[3].style.display = "none";
+    NotToOpen();
+    modal[modal.length - 4].style.display = 'block';
     }
-
-map.onclick = function ShowMap() {  
-    modal[0].style.display = "none";
-    modal[1].style.display = "block";
-    modal[2].style.display = "none";
-    modal[3].style.display = "none";
 }
-SignUp[0].onclick = function () {    
-    modal[0].style.display = "none";
-    modal[1].style.display = "none";   
-    modal[2].style.display = "block";
-    modal[3].style.display = "none";
+if (map !== null) {
+map.onclick = function ShowMap() {
+    NotToOpen();
+    modal[modal.length - 3].style.display = 'block';
+    }
 }
-
+if (SignUp[0] !== null) {
+SignUp[0].onclick = function () {
+    NotToOpen();
+    modal[modal.length - 2].style.display = 'block';
+    }
+}
+if (LogIn[0] !== null) {
 LogIn[0].onclick = function () {
-    modal[0].style.display = "none";
-    modal[1].style.display = "none";
-    modal[2].style.display = "none";
-    modal[3].style.display = "block";
+    NotToOpen();
+    modal[modal.length-1].style.display = 'block';
+    }
+}
+for (var i = 0; i < modal.length; i++){
+    buttonClose[i].onclick = hide;
 }
 
-buttonClose[0].onclick = function () {
-    modal[0].style.display = "none";
-}
-buttonClose[1].onclick = function () {
-    modal[1].style.display = "none";
-}
-buttonClose[2].onclick = function () {
-    modal[2].style.display = "none";
-}
-buttonClose[3].onclick = function () {
-    modal[3].style.display = "none";
+function hide(){
+    for(var i=0;i<modal.length;i++){
+        modal[i].style.display='none';
+        console.log("Removed "+ i+ "number");
+    }
 }
 
-
+function NotToOpen() {
+    for (var i = 0; i < modal.length; i++) {
+        modal[i].style.display='none';
+    }
+}

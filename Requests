@@ -1,0 +1,9 @@
+use TechnomartDB;
+--то для повзунка з ціною, замість чисел букви поставиш, як функція public static void(minPrice, maxPrice){}
+SELECT * FROM TechnomartСommodity WHERE Price >= 0 and Price <=30000;
+SELECT * FROM TechnomartСommodity WHERE Brand = 'brand' and CommodityType = 'type' and Model = 'model'; 
+
+SELECT * FROM TechnomartUser;
+--тут пошук товару по ID юзера, параметр в функцію ID юзера
+SELECT Brand FROM TechnomartСommodity WHERE IDCommodity = (SELECT CommodityID FROM UserAndCommodity WHERE UserID = (SELECT IDUser FROM TechnomartUser WHERE IDUser='id юзера')); 
+

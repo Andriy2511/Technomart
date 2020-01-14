@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ua">
-
 <head>
 	<meta charset="UTF-8">
 	<title>Магазин «Техномарт»</title>
@@ -89,16 +88,16 @@
 		<nav class="main-navigation container">
 			<ul class="site-navigation">
 				<li>
-					<a href="index.html">Головна</a>
+					<a>Головна</a>
 				</li>
 				<li>
 					<a href="catalog.html">Каталог</a>
 				</li>
 				<li>
-					<a href="#">Доставка</a>
+					<a href="delivery.html">Доставка</a>
 				</li>
 				<li>
-					<a href="#">Контакти</a>
+					<a href="contacts.html">Контакти</a>
 				</li>
 			</ul>
 		</nav>
@@ -184,7 +183,7 @@
 				</li>
 				<li>
 					<a class="brands-item" href="http://www.interskol.ua/">
-						<img src="img/brand-interskol.png" alt="Логотип бренда Интерскол" width="184" height="32">
+						<img src="img/brand-interskol.png" alt="Логотип бренда Інтерскол" width="184" height="32">
 					</a>
 				</li>
 				<li>
@@ -353,7 +352,7 @@
 		<div class="request-form-bottom">
 			<button class="button" type="submit" form="request">Надіслати</button>
 		</div>
-		<button class="modal-close" type="button">Закрити</button>я
+		<button class="modal-close" type="button">Закрити</button>
 	</section>
 
 	<section class="modal modal-map" id="bigMap">
@@ -366,8 +365,52 @@
 		</a>
 		<button class="modal-close" type="button">Закрити</button>
 	</section>
+
+  <section class="modal modal-sign-up">
+    <h2 class="visually-hidden">Форма реєстрації</h2>
+    <form class="sign-up-form" id="sign-up" action="https://echo.htmlacademy.ru/" method="post">
+        <p>
+            <label for="sign-up-name">Ім'я:</label>
+            <input name="name" type="text" id="sign-up-name" placeholder="Ваше ім'я">
+        </p>
+        <p>
+            <label for="sign-up-surname">Прізвище:</label>
+            <input name="surname" type="text" id="sign-up-surname" placeholder="Ваше прізвище">
+        </p>
+        <p>
+            <label for="sign-up-nickname">Нікнейм:</label>
+            <input name="nickname" type="text" id="sign-up-nickname" placeholder="Ваш нікнейм">
+        </p>
+        <p>
+            <label for="sign-up-password">Пароль:</label>
+            <input name="password" type="password" id="sign-up-password" placeholder="Ваш пароль">
+        </p>
+    </form>
+    <div class="sign-up-form-bottom">
+        <button class="button" type="submit" form="sign-up">Зареєструватись</button>
+    </div>
+    <button class="modal-close" type="button">Закрити</button>
+	</section>
+
+	<section class="modal modal-sign-in">
+    <h2 class="visually-hidden">Форма входу</h2>
+    <form class="sign-in-form" id="sign-in" action="https://echo.htmlacademy.ru/" method="post">
+        <p>
+            <label for="sign-in-nickname">Нікнейм:</label>
+            <input name="nickname" type="text" id="sign-in-nickname" placeholder="Ваш нікнейм">
+        </p>
+        <p>
+            <label for="sign-in-password">Пароль:</label>
+            <input name="password" type="password" id="sign-in-password" placeholder="Ваш пароль">
+        </p>
+    </form>
+    <div class="sign-in-form-bottom">
+        <button class="button" type="submit" form="sign-in">Увійти</button>
+    </div>
+    <button class="modal-close" type="button">Закрити</button>
+	</section>
+
 	<script src="JS/ServiceSlider.js"></script>
 	<script src="JS/ShowModal.js"></script>
 </body>
-
 </html>

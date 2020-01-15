@@ -152,7 +152,7 @@
 		</div>
 	</footer>
 
-	<section class="modal modal-sign-up">
+  <section class="modal modal-sign-up">
     <h2 class="visually-hidden">Форма реєстрації</h2>
     <form class="sign-up-form" id="sign-up" action="https://echo.htmlacademy.ru/" method="post">
         <p>
@@ -170,7 +170,11 @@
         <p>
             <label for="sign-up-password">Пароль:</label>
             <input name="password" type="password" id="sign-up-password" placeholder="Ваш пароль">
-        </p>
+		</p>
+		<p>
+			<label for="sign-up-password">E-mail:</label>
+			<input name="email" type="email" id="sign-up-email" placeholder="Ваш email">
+		</p>
     </form>
     <div class="sign-up-form-bottom">
         <button class="button" type="submit" form="sign-up">Зареєструватись</button>
@@ -182,8 +186,8 @@
     <h2 class="visually-hidden">Форма входу</h2>
     <form class="sign-in-form" id="sign-in" action="https://echo.htmlacademy.ru/" method="post">
         <p>
-            <label for="sign-in-nickname">Нікнейм:</label>
-            <input name="nickname" type="text" id="sign-in-nickname" placeholder="Ваш нікнейм">
+            <label for="sign-in-nickname">Логін:</label>
+            <input name="nickname" type="text" id="sign-in-nickname" placeholder="Ваш нікнейм або пошта">
         </p>
         <p>
             <label for="sign-in-password">Пароль:</label>

@@ -13,7 +13,7 @@ body {
 }
 
 .inner-page,
-.cart-page,
+.bookmark-page,
 .order-page {
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-style: normal;
@@ -1701,14 +1701,19 @@ input[type="range"]::-moz-range-progress {
 	width: 40%;
 }
 
-/* cart */
+/* bookmarks */
 
-.cart-catalog {
+.bookmark-catalog {
 	margin-bottom: 60px;
 }
 
-.cart-page .catalog {
+.bookmark-page .catalog {
 	margin-bottom: 50px;
+}
+
+.bookmark-catalog .buy {
+	margin-top: 33px;
+	margin-bottom: 33px;
 }
 
 /* footer-top */

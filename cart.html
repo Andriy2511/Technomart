@@ -20,7 +20,7 @@
 					<input type="search" name="search" id="search-field" placeholder="Пошук:">
 				</form>
 				<a class="bookmark" href="#">Закладки: 0</a>
-				<a class="cart" href="cart.html">Корзина: 0</a>
+				<a class="cart">Корзина: 0</a>
 				<a class="button-order" href="#">Оформити замовлення</a>
 			</div>
 		</div>
@@ -35,7 +35,7 @@
 				<p class="header-phone">+38 (067) 555-55-55</p>
 				<p class="header-address ">м. Львів, вул. І. Горбачевського 18</p>
 			</div>
-			<ul class="visually-hidden auth-navigation">
+			<ul class="auth-navigation">
 				<li>
 					<a class="sign-in" href="#">
 						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="17">
@@ -50,7 +50,7 @@
 				</li>
 				<li><a class="sign-up" href="#">Реєстрація</a></li>
 			</ul>
-			<div class="account-wrapper">
+			<div class="visually-hidden account-wrapper">
 				<ul class="account-navigation">
 					<li>
 						<a class="account-name" href="#account">
@@ -76,7 +76,7 @@
 				</ul>
 				<ul class="second-account-navigation">
 					<li>
-						<a>Мої замовлення</a>
+						<a href="orders.html">Мої замовлення</a>
 					</li>
 					<li>
 						<a href="#">Особистий кабінет</a>
@@ -103,25 +103,97 @@
 		</nav>
 	</header>
 
-	<main class="order-page">
-		<h1 class="page-title">Мої замовлення</h1>
+	<main class="cart-page">
+		<h1 class="page-title">Корзина</h1>
 
-		<section class="orders container">
-			<ul>
-				<li class="order order-top">
-					<div class="date">Дата</div> 
-					<div class="number">Номер</div>
-					<div class="cost">Загальна сума</div>
-					<div class="address">Адреса доставки</div>
-				</li>
-				<li class="order">
-					<div class="date">16/01/2020</div>
-					<div class="number">77777</div>
-					<div class="cost">66700</div>
-					<div class="address">вул. І. Горбачевського 18</div>
-				</li>
-			</ul>
-		</section>
+		<div class="cart-catalog container">
+			<section class="catalog">
+      	<h2 class="visually-hidden">Каталог</h2>
+
+      	<ul class="catalog-items">
+          <!-- First row -->
+          <li class="catalog-item" tabindex="0">
+              <div class="actions">
+                  <a href="#" class="button buy">Купити</a>
+                  <a href="#" class="button bookmark">В закладки</a>
+              </div>
+              <div class="image"><img src="img/bosch_bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="110"></div>  
+              <div class="title">Перфоратор BOSCH BFG 3000</div>      
+              <div class="discount">22500 ГPН.</div>
+              <div class="price">15500 ГРН.</div>
+          </li>
+          <li class="catalog-item" tabindex="0">
+              <div class="actions">
+                  <a href="#" class="button buy">Купити</a>
+                  <a href="#" class="button bookmark">В закладки</a>
+              </div>
+              <div class="image"><img src="img/bosch_bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="110"></div>  
+              <div class="title">Перфоратор BOSCH BFG 6000</div>      
+              <div class="discount">30500 ГРН.</div>
+              <div class="price">25500 ГРН.</div>
+          </li>
+          <li class="catalog-item" tabindex="0">
+              <div class="flag flag-new">Новинка</div>
+              <div class="actions">
+                  <a href="#" class="button buy">Купити</a>
+                  <a href="#" class="button bookmark">В закладки</a>
+              </div>
+              <div class="image"><img src="img/bosch_bfg-3000.jpg" alt="Перфоратор BOSCH BFG 9000" width="218" height="110"></div>  
+              <div class="title">Перфоратор BOSCH BFG 2000</div>      
+              <div class="discount"></div>
+              <div class="price">12500 ГРН.</div>
+          </li>
+          <li class="catalog-item" tabindex="0">
+              <div class="flag flag-new">Новинка</div>
+              <div class="actions">
+                  <a href="#" class="button buy">Купити</a>
+                  <a href="#" class="button bookmark">В закладки</a>
+              </div>
+              <div class="image"><img src="img/bosch_bfg-3000.jpg" alt="Перфоратор BOSCH BFG 9000" width="218" height="110"></div>  
+              <div class="title">Перфоратор BOSCH BFG 2000</div>      
+              <div class="discount"></div>
+              <div class="price">12500 ГРН.</div>
+          </li>  
+          <li class="catalog-item" tabindex="0">
+              <div class="flag flag-new">Новинка</div>
+              <div class="actions">
+                  <a href="#" class="button buy">Купити</a>
+                  <a href="#" class="button bookmark">В закладки</a>
+              </div>
+              <div class="image"><img src="img/bosch_bfg-3000.jpg" alt="Перфоратор BOSCH BFG 9000" width="218" height="110"></div>  
+              <div class="title">Перфоратор BOSCH BFG 2000</div>      
+              <div class="discount"></div>
+              <div class="price">12500 ГРН.</div>
+          </li>
+          <li class="catalog-item" tabindex="0">
+              <div class="flag flag-new">Новинка</div>
+              <div class="actions">
+                  <a href="#" class="button buy">Купити</a>
+                  <a href="#" class="button bookmark">В закладки</a>
+              </div>
+              <div class="image"><img src="img/bosch_bfg-3000.jpg" alt="Перфоратор BOSCH BFG 9000" width="218" height="110"></div>  
+              <div class="title">Перфоратор BOSCH BFG 2000</div>      
+              <div class="discount"></div>
+              <div class="price">12500 ГРН.</div>
+          </li>   
+      	</ul>
+	  	</section>
+
+	  	<ul class="pagination-list" aria-label="Сторінки">
+	      <li class="pagination-item">
+	          <a class="button-inner">1</a>
+	      </li>
+	      <li class="pagination-item">
+	          <a class="button-inner">2</a>
+	      </li>
+	      <li class="pagination-item">
+	          <a class="button-inner">3</a>
+	      </li>
+	      <li class="pagination-item">
+	          <a class="button-inner button-next">Наступна</a>
+	      </li>
+	  	</ul>
+		</div>
 		
 	</main>
 
@@ -164,11 +236,45 @@
 					<p>
 						Розроблено - <br>
 						<a href="#">...</a>
+
 					</p>
 				</div>
 			</div>
 		</div>
 	</footer>
+
+	<section class="modal modal-form">
+		<h2 class="visually-hidden">Форма відправлення</h2>
+		<form class="request-form" id="request" action="https://echo.htmlacademy.ru/" method="post">
+			<p>
+				<label for="request-name">Ваше ім'я:</label>
+				<input name="name" type="text" id="request-name" placeholder="Представтесь, будь ласка">
+			</p>
+			<p>
+				<label for="request-email">Ваш e-mail:</label>
+				<input name="email" type="email" id="request-email" placeholder="Для отримання відповіді">
+			</p>
+			<p>
+				<label for="request-comment">Текст листа:</label>
+				<textarea name="comment" id="request-comment" placeholder="У вільній формі"></textarea>
+			</p>
+		</form>
+		<div class="request-form-bottom">
+			<button class="button" type="submit" form="request">Надіслати</button>
+		</div>
+		<button class="modal-close" type="button">Закрити</button>
+	</section>
+
+	<section class="modal modal-map">
+		<h2 class="visually-hidden">Як до нас добратися</h2>
+		<a href="#">
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.748967096635!2d24.00692501567493!3d49.82838317939438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add7df5a9921f%3A0xc59052d9e18b2d4c!2sIppt%20Nu%20%22L%CA%B9vivs%CA%B9ka%20Politekhnika%22%2C%20Ivana%20Horbachevs&#39;koho%20St%2C%2018%2C%20L&#39;viv%2C%20L&#39;vivs&#39;ka%20oblast%2C%2079000!5e0!3m2!1sen!2sua!4v1571077467173!5m2!1sen!2sua"
+				width="940" height="446" id="map" frameborder="0" style="border:solid 1px;border-color: grey;"
+				allowfullscreen=""></iframe>
+		</a>
+		<button class="modal-close" type="button">Закрити</button>
+	</section>
 
   <section class="modal modal-sign-up">
     <h2 class="visually-hidden">Форма реєстрації</h2>
@@ -217,8 +323,8 @@
     </div>
     <button class="modal-close" type="button">Закрити</button>
 	</section>
-	
-	<script src="JS/ServiceSlider.js"></script>
-	<script src="JS/ShowModal.js"></script>
+
+	<script src="js/ServiceSlider.js"></script>
+	<script src="js/ShowModal.js"></script>
 </body>
 </html>

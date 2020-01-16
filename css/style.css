@@ -12,7 +12,9 @@ body {
 	background-color: #ffffff;
 }
 
-.inner-page {
+.inner-page,
+.cart-page,
+.order-page {
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-style: normal;
 	font-weight: 400;
@@ -952,6 +954,8 @@ input[type="radio"].visually-hidden {
 	border-left-color: #ee3643;
 }
 
+/* brands */
+
 .popular-brands .button-more {
 	padding: 10px 70px;
 }
@@ -1659,15 +1663,9 @@ input[type="range"]::-moz-range-progress {
 
 /* orders */
 
-.order-page h1 {
-	text-transform: uppercase;
-}
-
 .orders ul {
 	margin: 0;
 	padding: 0;
-
-	color: #000000;
 
 	list-style: none;
 }
@@ -1682,28 +1680,35 @@ input[type="range"]::-moz-range-progress {
 }
 
 .order-top {
+	font-weight: 700;
 	color: #ffffff;
 	background-color: #32425c;
 }
 
 .order .number {
 	width: 20%;
-	background-color: ;
 }
 
 .order .date {
 	width: 20%;
-	background-color: ;
 }
 
 .order .cost {
 	width: 20%;
-	background-color: ;
 }
 
 .order .address {
 	width: 40%;
-	background-color: ;
+}
+
+/* cart */
+
+.cart-catalog {
+	margin-bottom: 60px;
+}
+
+.cart-page .catalog {
+	margin-bottom: 50px;
 }
 
 /* footer-top */

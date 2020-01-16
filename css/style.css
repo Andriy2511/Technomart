@@ -1657,6 +1657,55 @@ input[type="range"]::-moz-range-progress {
 	text-transform: none;
 }
 
+/* orders */
+
+.order-page h1 {
+	text-transform: uppercase;
+}
+
+.orders ul {
+	margin: 0;
+	padding: 0;
+
+	color: #000000;
+
+	list-style: none;
+}
+
+.order {
+	display: flex;
+	margin-bottom: 10px;
+	padding: 10px;
+
+	text-align: center;
+	background-color: #f7f3ec;
+}
+
+.order-top {
+	color: #ffffff;
+	background-color: #32425c;
+}
+
+.order .number {
+	width: 20%;
+	background-color: ;
+}
+
+.order .date {
+	width: 20%;
+	background-color: ;
+}
+
+.order .cost {
+	width: 20%;
+	background-color: ;
+}
+
+.order .address {
+	width: 40%;
+	background-color: ;
+}
+
 /* footer-top */
 
 .page-footer .index-logo {

@@ -1,0 +1,16 @@
+SELECT * FROM commodity WHERE Brand = 'bosch';
+SELECT * FROM commodity WHERE Brand = 'interskol';
+SELECT * FROM commodity WHERE Brand = 'makita';
+SELECT * FROM commodity WHERE Brand = 'dewalt';
+SELECT * FROM commodity WHERE Brand = 'hitachi';
+
+SELECT * FROM commodity
+ORDER BY Price DESC;
+SELECT * FROM Customers
+ORDER BY Price ASC;
+
+
+
+
+
+

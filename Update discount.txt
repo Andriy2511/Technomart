@@ -1,0 +1,7 @@
+UPDATE `technomart`.`commodity` SET `discount` = '0' WHERE (`IDCommodity` = '2');
+UPDATE `technomart`.`commodity` SET `discount` = '0' WHERE (`IDCommodity` = '3');
+UPDATE `technomart`.`commodity` SET `discount` = '0' WHERE (`IDCommodity` = '6');
+UPDATE `technomart`.`commodity` SET `discount` = '0' WHERE (`IDCommodity` = '9');
+UPDATE `technomart`.`commodity` SET `discount` = '0' WHERE (`IDCommodity` = '11');
+UPDATE `technomart`.`commodity` SET `discount` = '0' WHERE (`IDCommodity` = '13');
+UPDATE `technomart`.`commodity` SET `discount` = '0' WHERE (`IDCommodity` = '15');

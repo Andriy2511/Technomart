@@ -1,0 +1,32 @@
+use technomart;
+INSERT INTO `technomart`.`commodity` (`IDCommodity`, `CommodityType`, `Brand`, `Model`, `FullName`, `discount`, `Price`, `Image`, `PowerType`) VALUES ('1', 'Перфоратор', 'Makita', 'NR-241Z', 'MAKITA NR-241Z', '6333', '4500', 'makitadnr241z.jpg', 0);
+INSERT INTO `technomart`.`commodity` (`IDCommodity`, `CommodityType`, `Brand`, `Model`, `FullName`, `Price`, `Image`, `PowerType`) VALUES ('2', 'Перфоратор', 'Makita', 'M-8700', 'MAKITA  M-8700', '4900', 'makitam8700.jpg', 1);
+INSERT INTO `technomart`.`commodity` (`IDCommodity`, `CommodityType`, `Brand`, `Model`, `FullName`, `Price`, `Image`, `PowerType`) VALUES ('3', 'Перфоратор', 'Makita', 'HR-5202C', 'MAKITA HR-5202C', '30000', 'makitahr5202c.jpg', 1);
+INSERT INTO `technomart`.`commodity` (`IDCommodity`, `CommodityType`, `Brand`, `Model`, `FullName`, `discount`, `Price`, `Image`, `PowerType`) VALUES ('4', 'Перфоратор', 'Makita', 'HR-4002', 'MAKITA HR-4002', '7700', '6700', 'makitahr4002.jpg', 1);
+INSERT INTO `technomart`.`commodity` (`IDCommodity`, `CommodityType`, `Brand`, `Model`, `FullName`, `discount`, `Price`, `Image`, `PowerType`) VALUES ('5', 'Перфоратор', 'DEWALT', 'KTDCH-133M1', 'DEWALT KTDCH-133M1', '19999', '18300', 'dewaltktdch133m1.jpg', 0);
+INSERT INTO `technomart`.`commodity` (`IDCommodity`, `CommodityType`, `Brand`, `Model`, `FullName`, `Price`, `Image`, `PowerType`) VALUES ('6', 'Перфоратор', 'DEWALT', 'D-25144K', 'DEWALT D-25144K', '6900', 'dewaltd25144k.jpg', 1);
+INSERT INTO `technomart`.`commodity` (`IDCommodity`, `CommodityType`, `Brand`, `Model`, `FullName`, `discount`, `Price`, `Image`, `PowerType`) VALUES ('7', 'Перфоратор', 'DEWALT', 'D-25143K', 'DEWALT D-25143K', '37000', '33550', 'dewaltd25143k.jpg', 1);
+INSERT INTO `technomart`.`commodity` (`IDCommodity`, `CommodityType`, `Brand`, `Model`, `FullName`, `discount`, `Price`, `Image`, `PowerType`) VALUES ('8', 'Перфоратор', 'DEWALT', 'DCH-133N', 'DEWALT DCH-133N', '7500', '6999', 'dewaltdch133n.jpg', 0);
+INSERT INTO `technomart`.`commodity` (`IDCommodity`, `CommodityType`, `Brand`, `Model`, `FullName`, `Price`, `Image`, `PowerType`) VALUES ('9', 'Перфоратор', 'INTERSCOL', 'P-20-550EP', 'INTERSCOL P-20-550EP', '2400', 'interscolp-20-550ep.jpg', 1);
+INSERT INTO `technomart`.`commodity` (`IDCommodity`, `CommodityType`, `Brand`, `Model`, `FullName`, `discount`, `Price`, `Image`, `PowerType`) VALUES ('10', 'Перфоратор', 'INTERSCOL', 'P-22-620EP', 'INTERSCOL P-22-620EP', '4500', '3500', 'interscolp-22-620ep.jpg', 1);
+INSERT INTO `technomart`.`commodity` (`IDCommodity`, `CommodityType`, `Brand`, `Model`, `FullName`, `Price`, `Image`, `PowerType`) VALUES ('11', 'Перфоратор', 'INTERSCOL', 'P-26-800EP', 'INTERSCOL P-26-800EP', '1840', 'interscol-26-800ep.jpg', 1);
+INSERT INTO `technomart`.`commodity` (`IDCommodity`, `CommodityType`, `Brand`, `Model`, `FullName`, `discount`, `Price`, `Image`, `PowerType`) VALUES ('12', 'Перфоратор', 'INTERSCOL', 'P-45-1000E', 'INTERSCOL P-45-1000E', '10300', '9100', 'interscolp-45-1000e.jpg', 1);
+INSERT INTO `technomart`.`commodity` (`IDCommodity`, `CommodityType`, `Brand`, `Model`, `FullName`, `Price`, `Image`, `PowerType`) VALUES ('13', 'Перфоратор', 'HITACHI', 'DH-22PH', 'HITACHI DH-22PH', '2750', 'hitachidh22ph.jpg', 1);
+INSERT INTO `technomart`.`commodity` (`IDCommodity`, `CommodityType`, `Brand`, `Model`, `FullName`, `discount`, `Price`, `Image`, `PowerType`) VALUES ('14', 'Перфоратор', 'HITACHI', 'DH-24PH', 'HITACHI DH-24PH', '3999', '3400', 'hitachidh24ph.jpg', 1);
+INSERT INTO `technomart`.`commodity` (`IDCommodity`, `CommodityType`, `Brand`, `Model`, `FullName`, `Price`, `Image`, `PowerType`) VALUES ('15', 'Перфоратор', 'HITACHI', 'DH-45ME', 'HITACHI DH-45ME', '21730', 'hitachidh45me.jpg', 1);
+
+
+
+CREATE TABLE `commodity` (
+  `IDCommodity` int(11) NOT NULL AUTO_INCREMENT,
+  `CommodityType` varchar(25) DEFAULT NULL,
+  `Brand` varchar(25) DEFAULT NULL,
+  `Model` varchar(45) DEFAULT NULL,
+  `FullName` varchar(100) DEFAULT NULL,
+  `discount` int(11) DEFAULT NULL,
+  `Price` int(11) DEFAULT NULL,
+  `Image` varchar(45) DEFAULT NULL,
+  `PowerType` bit(1) DEFAULT NULL,
+  `Characteristic` varchar(2000) DEFAULT NULL,
+  PRIMARY KEY (`IDCommodity`)
+)

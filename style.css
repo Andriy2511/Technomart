@@ -947,6 +947,104 @@ input[type="radio"].visually-hidden {
 	text-align: center;
 	padding: 3px;
 }
+.wtf{
+	position: absolute;
+	width: 414px;
+	height: 54px;
+	left: 100px;
+	top: 310px;
+	font-size: 1.7em;
+	font-family: Calibri;
+	color: #1F1C1C;
+}
+.number{
+	color: #000000;
+	font-size: large;
+}
+.wtf1{
+	position: absolute;
+	width: auto;
+	height: 54px;
+	left: 130px;
+	top: 380px;
+	font-size: 1.1em;
+	font-family: Calibri;
+	color: #000000;
+}
+
+.wtf2{
+	position: absolute;
+	width: auto;
+	height: 54px;
+	left: 130px;
+	top: 425px;
+	font-size: 1.1em;
+	font-family: Calibri;
+	color: #000000;
+}
+
+.wtf3{
+	position: absolute;
+	width: auto;
+	height: 54px;
+	left: 130px;
+	top: 470px;
+	font-size: 1.1em;
+	font-family: Calibri;
+	color: #000000;
+}
+
+.wtf4{
+	position: absolute;
+	width: auto;
+	height: 54px;
+	left: 130px;
+	top: 515px;
+	font-size: 1.1em;
+	font-family: Calibri;
+	color: #000000;
+}
+
+.wtf5{
+	position: absolute;
+	width: auto;
+	height: 54px;
+	left: 130px;
+	top: 560px;
+	font-size: 1.1em;
+	font-family: Calibri;
+	color: #000000;
+}
+
+.wtf6{
+	position: absolute;
+	width: auto;
+	height: 54px;
+	left: 130px;
+	top: 605px;
+	font-size: 1.1em;
+	font-family: Calibri;
+	color: #000000;
+}
+
+.wtf7{
+	position: absolute;
+	width: auto;
+	height: 54px;
+	left: 130px;
+	top: 650px;
+	font-size: 1.1em;
+	font-family: Calibri;
+	color: #000000;
+}
+
+.backgrond-contacts {
+  width: auto;
+  height: 400px;
+	background-color: #F3F7F8;
+}
+
+
 .catalog-item .image {
 	width: 200px;
 	height: 168px;
@@ -956,7 +1054,6 @@ input[type="radio"].visually-hidden {
 	display: flex;
   align-items: center;
 }
-
 
 .catalog-item .title {
 	min-height: 40px;

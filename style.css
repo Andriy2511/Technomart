@@ -180,7 +180,7 @@ input[type="radio"].visually-hidden {
 }
 
 .search-form {
-	width: 270px;
+width: 500px;
 }
 
 .search-form input::-moz-placeholder {
@@ -463,7 +463,7 @@ input[type="radio"].visually-hidden {
 .account-wrapper {
 	display: -webkit-box;
 	display: -ms-flexbox;
-	display: none;
+	display: flex;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 	width: 300px;
@@ -551,13 +551,11 @@ input[type="radio"].visually-hidden {
 
 .second-account-navigation li:first-child {
 	float: left;
-	margin-right: 32px;
+	margin-right: 10px;
 }
 
 
-.second-account-navigation li:last-child {
-	float: left;
-}
+
 
 .second-account-navigation a:hover,
 .second-account-navigation a:focus {
@@ -947,103 +945,74 @@ input[type="radio"].visually-hidden {
 	text-align: center;
 	padding: 3px;
 }
-.wtf{
-	position: absolute;
-	width: 414px;
-	height: 54px;
-	left: 100px;
-	top: 310px;
-	font-size: 1.7em;
-	font-family: Calibri;
-	color: #1F1C1C;
-}
-.number{
-	color: #000000;
-	font-size: large;
-}
-.wtf1{
-	position: absolute;
-	width: auto;
-	height: 54px;
-	left: 130px;
-	top: 380px;
-	font-size: 1.1em;
-	font-family: Calibri;
-	color: #000000;
+
+.find {
+    margin-bottom: 50px;
+    padding: 0;
+
+    font: inherit;
+    background-color: #32425c;
 }
 
-.wtf2{
-	position: absolute;
-	width: auto;
-	height: 54px;
-	left: 130px;
-	top: 425px;
-	font-size: 1.1em;
-	font-family: Calibri;
-	color: #000000;
+.find-text {
+    margin-bottom: 30px;
+    padding: 10px 100px 0 100px;
 }
 
-.wtf3{
-	position: absolute;
-	width: auto;
-	height: 54px;
-	left: 130px;
-	top: 470px;
-	font-size: 1.1em;
-	font-family: Calibri;
-	color: #000000;
+.find-list {
+    margin: 0;
+    padding: 0 100px 10px 100px;
+    list-style: none;
 }
 
-.wtf4{
-	position: absolute;
-	width: auto;
-	height: 54px;
-	left: 130px;
-	top: 515px;
-	font-size: 1.1em;
-	font-family: Calibri;
-	color: #000000;
+.find-city {
+    margin-bottom: 15px;
 }
 
-.wtf5{
-	position: absolute;
-	width: auto;
-	height: 54px;
-	left: 130px;
-	top: 560px;
-	font-size: 1.1em;
-	font-family: Calibri;
-	color: #000000;
+.city-text {
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
 }
 
-.wtf6{
-	position: absolute;
-	width: auto;
-	height: 54px;
-	left: 130px;
-	top: 605px;
-	font-size: 1.1em;
-	font-family: Calibri;
-	color: #000000;
+.city-address {
+    margin: 0;
+    padding: 0;
 }
 
-.wtf7{
-	position: absolute;
-	width: auto;
-	height: 54px;
-	left: 130px;
-	top: 650px;
-	font-size: 1.1em;
-	font-family: Calibri;
-	color: #000000;
+.city-number {
+    margin: 0;
+    padding: 0;
+		text-align: left;
+		width: 200px;
 }
 
-.backgrond-contacts {
-  width: auto;
-  height: 400px;
-	background-color: #F3F7F8;
+.city-number a:link {
+color: white;
+}
+.city-number a:hover {
+color: #0078D7;
+cursor: pointer;
+}
+.city-number a:active {
+color: #0078D7;
+cursor: pointer;
 }
 
+.city-arrow{
+    position: absolute;
+    top: -2px;
+    left: 40%;
+    width: 8px;
+    height: 10px;
+    border: solid #0078D7;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+ -webkit-transform: rotate(45deg);
+}
 
 .catalog-item .image {
 	width: 200px;
@@ -1059,8 +1028,7 @@ input[type="radio"].visually-hidden {
 	min-height: 40px;
 	margin-top: 10px;
 	margin-bottom: 15px;
-	padding: 0 25px;
-
+	padding: 0 15px;
 	font: inherit;
 	font-size: 18px;
 	line-height: 20px;
@@ -1736,8 +1704,8 @@ input[type="range"]::-moz-range-progress {
 	margin-right: 65px;
 }
 
-.sort-function {
-	margin-right: 45px;
+.sort-brand {
+	margin-right: 80px;
 }
 
 .sort-to-high {
@@ -1836,7 +1804,7 @@ input[type="range"]::-moz-range-progress {
 	background-color: #32425c;
 }
 
-.order .number {
+.order .numb {
 	width: 20%;
 }
 
@@ -2082,6 +2050,7 @@ input[type="range"]::-moz-range-progress {
 }
 
 .modal-form,
+.removeFromCart,
 .modal-sign-up,
 .modal-sign-in {
 	left: 50%;
@@ -2247,7 +2216,44 @@ input[type="range"]::-moz-range-progress {
 	    -ms-transform: rotate(-45deg);
 	        transform: rotate(-45deg);
 }
+.close {
+	position: relative;
+	top: 0px;
+	right: 10px;
+	width: 21px;
+	height: 21px;
+	background-color: transparent;
+	cursor: pointer;
+	font-size: 0;
+	border: none;
+}
 
+.close::before,
+.close::after {
+	content: "";
+
+	position: absolute;
+	top: 8px;
+	left: -5px;
+
+	width: 27px;
+	height: 5px;
+
+	background-color: #ee3643;
+	border-radius: 2px;
+}
+
+.close::before {
+	-webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
+}
+
+.close::after {
+	-webkit-transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
+}
 .modal-map {
 	left: 50%;
 	top:100px;
